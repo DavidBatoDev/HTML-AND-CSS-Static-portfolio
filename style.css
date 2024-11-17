@@ -424,7 +424,7 @@ section {
 
 @media screen and (max-width: 768px) {
     .skills-grid {
-        grid-template-columns: repeat(2, minmax(180px, 1fr));
+        grid-template-columns: repeat(2, minmax(130px, 1fr));
         gap: 1rem;
     }
 
@@ -498,7 +498,7 @@ section {
 .project-card img {
     height: 300px;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 5px;
     object-fit: cover;
     background-color: var(--accent-color);
@@ -507,6 +507,15 @@ section {
 @media screen and (max-width: 768px) {
     .projects--grid {
         grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
+
+    .project-card img {
+        height: 300px;
+        width: 100%;
+        object-fit: contain;
+        border-radius: 5px;
+        object-fit: cover;
+        background-color: var(--accent-color);
     }
     
 }
